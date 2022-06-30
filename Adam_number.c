@@ -1,33 +1,30 @@
 #include<stdio.h>
+#include<math.h>
 int main()
 {
-    int a;
-    scanf("%d",&a);
-    int b,rev=0,temp,sq1,sq2;
-    int i;
-    temp=a;
-    sq1=a*a;
-    while(temp>0)
-    {
-        b=temp%10;
-        rev=(rev*10)+b;
-        temp=temp/10;
-    }
-    sq2=rev*rev;
-    temp=sq2;
-    rev=0;
-    while(temp>0)
-    {
-        b=temp%10;
-        rev=(rev*10)+b;
-        temp=temp/10;
-    }
-    if(rev==sq1)
-    {
-        printf("True");
-    }
-    else
-    {
-        printf("False");
-    }
+int n,sum=0,r,p,j,i=0,x;
+scanf("%d",&n);
+p=n*n;
+while (n>0)
+{
+r=n%10;
+sum=sum*10+r;
+n=n/10;
+}
+x=sum*sum;
+while (x>0)
+{
+j=x%10;
+i=i*10+j;
+x=x/10;
+}
+if(p==i)
+{
+printf("True");
+}
+else
+{
+printf("False");
+}
+return 0;
 }
