@@ -14,9 +14,9 @@ int main()
             flag=1;
         }
         else
-            printf("%d",r);
-            n=n%(int)ceil(pow(10,d));
-            d--;
+        printf("%d",r);
+        n=n%(int)ceil(pow(10,d));
+        d--;
     }
     return 0;
 }
