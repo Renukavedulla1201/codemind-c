@@ -13,10 +13,12 @@ int main()
             sum+=(rem*rem);
             num/=10;
         }
-        num=sum;
+         num=sum;
     }
     if(sum==1)
     printf("True");
     else
     printf("False");
+   
+
 }
