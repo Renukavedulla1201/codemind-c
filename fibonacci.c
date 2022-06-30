@@ -1,16 +1,14 @@
 #include<stdio.h>
 int main()
 {
-    int n,i,f1=0,f2=1;
+    int n,i,s,k,tn=1,tm=0;
     scanf("%d",&n);
-    int nt=f1+f2;
-    printf("%d %d",f1,f2);
-    for(i=3;i<=n;i++)
+    printf("0 ");
+    for(i=0;i<n-1;i++)
     {
-      printf(" %d",nt);
-      f1=f2;
-      f2=nt;
-      nt=f1+f2;
+       s=tn+tm;
+       tn=tm;
+       tm=s;
+       printf("%d ",s);
     }
-    return 0;
 }
