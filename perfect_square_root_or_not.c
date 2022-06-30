@@ -1,23 +1,19 @@
 #include<stdio.h>
+#include<math.h>
 int main()
 {
-    int n,i,p=0;
+    int s,n;
     scanf("%d",&n);
-    for(i=0;i<n;i++)
-    {
-        if(i*i==n)
-        {
-            p=1;
-            break;
-        }
-    }
-    if(p==1)
+    s=(int)sqrt(n);
+    if(s*s==n)
     {
         printf("True");
+        
     }
-    else
-    {
+   else
+    
         printf("False");
-    }
+    
     return 0;
+   
 }
